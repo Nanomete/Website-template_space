@@ -1,0 +1,121 @@
+body {
+    background-image: url(img/Space\ stars.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: min-content;
+}
+
+.Sun {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 210px;
+}
+
+.d-flex {
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: -1;
+}
+
+.d-flex {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+} 
+.border:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+.d-flex img {
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+.Sun {
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+.d-grid img {
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-9px); }
+    100% { transform: translateY(0); }
+  }
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        display: none;
+    }
+
+    .Sun {
+        margin-top: 30px;
+        width: 330px;
+        height: 90px;
+    }
+
+    .d-flex img {
+        margin-top: 60px;
+    }
+
+    .d-grid img {
+        height: 179px;
+    }
+
+    .d-grid p {
+        height: 380px;
+        top: 278px;
+        left: 10px;
+        right: 10px;
+        overflow: scroll;
+        position: fixed;
+    }
+
+    .Earth {
+        height: 200px;
+    }
+
+    .Moon {
+        height: 200px;
+    }
+    
+    .Rocket {
+        height: 200px;
+    }
+}
+
+.Text {
+    padding: 20px;
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: -1;
+}
+
+.d-grid img {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Dog {
+    height: 500px;
+}
+
+.Moon {
+    height: 500px;
+}
+
+.Rocket {
+    height: 500px;
+}
